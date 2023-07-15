@@ -1,0 +1,213 @@
+/* Fonts by google */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap");
+
+/* Basic Setting */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+  color: white;
+  line-height: 1.6;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+h1 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+p {
+  margin: 10px 0;
+}
+img {
+  width: 100%;
+}
+/* Text setting */
+.text-primary {
+  font-size: 25px;
+  color: #5c58b6;
+  font-weight: bold;
+}
+.text-secondary {
+  font-size: 25px;
+  color: #b957ce;
+  font-weight: bold;
+}
+/* Flex box setting for navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #272727;
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  color: #3a4e93;
+  opacity: 0.7;
+  padding: 20px;
+}
+a {
+  padding: 10px;
+  margin: 5px;
+}
+ul {
+  display: flex;
+}
+#but {
+  color: white;
+  background-color: transparent;
+  border-radius: 10px;
+}
+/* main navbar and content setting */
+.main_navbar {
+  background: url("/img/main_navbar.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  font-weight: bold;
+}
+.content h1 {
+  font-weight: bold;
+}
+/* Main setting */
+
+.icons {
+  padding: 30px;
+  display: flex;
+  background: url("/img/main_4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.icons h3 {
+  font-weight: bold;
+  margin-bottom: 50 px;
+  color: aliceblue;
+}
+.icons i {
+  background-color: #34281f;
+  color: white;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  color: aliceblue;
+}
+.flex-item > div {
+  padding: 20px;
+}
+
+.flex-items p {
+  color: white;
+}
+#p1,
+#p2,
+#p3,
+#p4 {
+  color: #6bd4f1;
+}
+/* porfoli */
+
+.Portolio {
+  background: url("/img/por.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-weight: bold;
+  padding: 20px;
+}
+.Portolio img:hover {
+  opacity: 0.6;
+}
+.Portolio header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.Portolio .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5px;
+}
+.Portolio .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 5px;
+}
+/* footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 250 px;
+  background-image: url(/img/A-E.jpg);
+  background-size: 100%;
+  padding: 20px;
+}
+footer a {
+  color: white;
+}
+.footer a:hover {
+  color: #5c58b6;
+}
+.footer.social > * {
+  margin-right: 30px;
+}
+/* media q */
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    padding: px;
+  }
+  .navbar a {
+    margin: 3px, 3px, 3px, 3px;
+    padding: 0px;
+    justify-content: center;
+  }
+  .icons {
+    flex-direction: column;
+  }
+  .navbar .logo,
+  .navbar ul {
+    font-size: 80%;
+  }
+  .Portolio .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Portolio .column {
+    max-width: 100%;
+  }
+}
